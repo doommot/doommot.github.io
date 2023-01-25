@@ -10,7 +10,9 @@ body {
 .text_mini{
 	color: gray;
 }
-
+.paybutton{
+	margin-bottom: 30px;
+}
 .rating-area {
 	overflow: hidden;
 	width: 250px;
