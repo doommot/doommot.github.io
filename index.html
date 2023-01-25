@@ -28,8 +28,23 @@
 			<h6>Tipping service</h6>
 			<br>
 			<h4>Amount in the bill: 2000 ₽<h4>
-			<b-form-rating v-model="value" variant="warning" class="mb-2"></b-form-rating>
-			<p class="mt-2">Value: 5</p>
+			
+			<template>
+			  <div>
+			    <b-form-rating v-model="value" variant="warning" class="mb-2"></b-form-rating>
+			    <p class="mt-2">Value: {{ value }}</p>
+			  </div>
+			</template>
+
+			<script>
+			  export default {
+			    data() {
+			      return {
+				value: 3
+			      }
+			    }
+			  }
+			</script>
 		</div>
 	</body>
 </html>
