@@ -7,6 +7,9 @@ body {
 	margin-left: auto;
     	margin-right: auto;
 }
+.text_mini{
+	color: gray;
+}
 
 .rating-area {
 	overflow: hidden;
