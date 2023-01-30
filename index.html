@@ -15,29 +15,27 @@
 			<h4 class="text">waiter_name</h4>
 			<h6 class="text">Tipping service</h6>
 	
-			<h6 class="text">Amount in the bill: 9500 din</h6>
-			<h4 class="text">950 din</h4>
-			<div class="amount-area text">
-				<input type="radio" id="amount-4" name="amount" value="4">5%
-				<label for="star-4" title="20%"></label>    
-				<input type="radio" id="amount-3" name="amount" value="3">10%
-				<label for="star-3" title="15%"></label>  
-				<input type="radio" id="amount-2" name="amount" value="2">15%
-				<label for="star-2" title="10%"></label>    
-				<input type="radio" id="amount-1" name="amount" value="1">20%
-				<label for="star-1" title="5%"></label>
+			<h6 class="text">Amount in the bill: <var>9500</var> din</h6>
+			<p class="text"><var>950</var> din</p>
+			<br>
+			<div class="btn-group-toggle">
+				<button type="button" class="btn btn-outline-warning" name="a">5%</button>
+				<button type="button" class="btn btn-outline-warning" name="b">10%</button>
+				<button type="button" class="btn btn-outline-warning" name="c">15%</button>
+				<button type="button" class="btn btn-outline-warning" name="d">20%</button>
 			</div>
+
 			<div class="rating-area">
-				<input type="radio" id="star-5" name="rating" value="5">
-				<label for="star-5" title="Оценка «5»"></label>	
-				<input type="radio" id="star-4" name="rating" value="4">
-				<label for="star-4" title="Оценка «4»"></label>    
-				<input type="radio" id="star-3" name="rating" value="3">
-				<label for="star-3" title="Оценка «3»"></label>  
-				<input type="radio" id="star-2" name="rating" value="2">
-				<label for="star-2" title="Оценка «2»"></label>    
 				<input type="radio" id="star-1" name="rating" value="1">
 				<label for="star-1" title="Оценка «1»"></label>
+				<input type="radio" id="star-2" name="rating" value="2">
+				<label for="star-2" title="Оценка «2»"></label>
+				<input type="radio" id="star-3" name="rating" value="3">
+				<label for="star-3" title="Оценка «3»"></label>
+				<input type="radio" id="star-4" name="rating" value="4">
+				<label for="star-4" title="Оценка «4»"></label>
+				<input type="radio" id="star-5" name="rating" value="5">
+				<label for="star-5" title="Оценка «5»"></label>
 			</div>
 			
 			<button type="button" class="btn btn-warning paybutton">Pay with card</button>
@@ -46,7 +44,7 @@
 					<input type="checkbox"> I want to compensate service fee 95 din for this transaction for waiter
 					<br>
 					<input type="checkbox"> I agree with all stuff
-			    </label>
+				</label>
 			</div>
 			
 			<p class="text_mini" style="margin: 0px">waiter_name recieves tips and feedback online through CoinFly</p>

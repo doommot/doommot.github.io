@@ -2,10 +2,10 @@ body {
 	background-color: #232323;
 }
 .text {
-	color: white;
+	color: #c2c2bd;
 	margin-top: 30px;
 	margin-left: auto;
-    	margin-right: auto;
+	margin-right: auto;
 }
 .text_mini{
 	color: gray;
@@ -13,12 +13,13 @@ body {
 .paybutton{
 	margin-bottom: 30px;
 }
+.btn{
+	margin-right: 5px;
+}
 .rating-area {
 	overflow: hidden;
-	width: 250px;
+/*	width: 250px;*/
 	margin-top: 30px;
-	margin-left: auto;
-    	margin-right: auto;
 	margin-bottom: 30px;
 }
 .rating-area:not(:checked) > input {
