@@ -16,44 +16,59 @@ body {
 .btn{
 	margin-right: 5px;
 }
-.rating-area {
-	overflow: hidden;
-/*	width: 250px;*/
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-.rating-area:not(:checked) > input {
-	display: none;
-}
-.rating-area:not(:checked) > label {
-	float: right;
-	width: 42px;
+.rating{
+	margin: 30px;
 	padding: 0;
-	cursor: pointer;
-	font-size: 32px;
-	line-height: 32px;
-	color: lightgrey;
-	text-shadow: 1px 1px #bbb;
+	border: none;
 }
-.rating-area:not(:checked) > label:before {
-	content: '★';
-}
-.rating-area > input:checked ~ label {
-	color: gold;
-	text-shadow: 1px 1px #c60;
-}
-.rating-area:not(:checked) > label:hover,
-.rating-area:not(:checked) > label:hover ~ label {
-	color: gold;
-}
-.rating-area > input:checked + label:hover,
-.rating-area > input:checked + label:hover ~ label,
-.rating-area > input:checked ~ label:hover,
-.rating-area > input:checked ~ label:hover ~ label,
-.rating-area > label:hover ~ input:checked ~ label {
-	color: gold;
-	text-shadow: 1px 1px goldenrod;
-}
-.rate-area > label:active {
+.rating__group{
 	position: relative;
+	width: 10em;
+	height: 2em;
+	background-image: url(star_gray.png);
+	background-size: 2em auto;
+	background-repeat: repeat-x;
+}
+.rating__star{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	height: 2em;
+	background-size: 2em auto;
+	background-repeat: repeat-x;
+	font-size: inherit;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.rating__star:focus{
+	outline: none;
+}
+.rating__star:checked,
+.rating__star:hover{
+	background-image: url(star_gold.png);
+}
+.rating__star:hover ~ .rating__star{
+	background-image: url(star_gray.png);
+}
+.rating__star:nth-of-type(1){
+	z-index: 5;
+	width: 2em;
+}
+.rating__star:nth-of-type(2){
+	z-index: 4;
+	width: 4em;
+}
+.rating__star:nth-of-type(3){
+	z-index: 3;
+	width: 6em;
+}
+.rating__star:nth-of-type(4){
+	z-index: 2;
+	width: 8em;
+}
+.rating__star:nth-of-type(5){
+	z-index: 1;
+	width: 10em;
 }
