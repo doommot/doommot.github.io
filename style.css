@@ -25,7 +25,7 @@ body {
 	position: relative;
 	width: 10em;
 	height: 2em;
-	background-image: url(star_gray.png);
+	background-image: url(https://pngimg.com/uploads/star/star_PNG41515.png);
 	background-size: 2em auto;
 	background-repeat: repeat-x;
 }
@@ -47,10 +47,10 @@ body {
 }
 .rating__star:checked,
 .rating__star:hover{
-	background-image: url(star_gold.png);
+	background-image: url(https://www.pngplay.com/wp-content/uploads/8/Gold-Vector-Star-PNG-Clipart-Background.png);
 }
 .rating__star:hover ~ .rating__star{
-	background-image: url(star_gray.png);
+	background-image: url(https://pngimg.com/uploads/star/star_PNG41515.png);
 }
 .rating__star:nth-of-type(1){
 	z-index: 5;
