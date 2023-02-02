@@ -83,7 +83,7 @@ body {
 .rating__star:focus{
 	outline: none;
 }
-.rating__input:focus ~ .rating__focus{
+/*.rating__input:focus ~ .rating__focus{
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -92,4 +92,4 @@ body {
 	z-index: -1;
 	outline: solid 0.2em;
 	outline-offset: 0.2em;
-}
+}*/
