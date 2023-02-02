@@ -27,15 +27,8 @@ body {
 	width: 10em;
 	height: 2em;
 	background-image: url(star_gray.png);
-	background-size: 2em 1.9em;
+	background-size: 2em auto;
 	background-repeat: repeat-x;
-}
-.rating__input{
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-	clip: rect(0, 0, 0, 0);
 }
 .rating__star{
 	position: absolute;
@@ -43,7 +36,7 @@ body {
 	left: 0;
 	margin: 0;
 	height: 2em;
-	background-size: 2em 1.9em;
+	background-size: 2em auto;
 	background-repeat: repeat-x;
 	font-size: inherit;
 	-webkit-appearance: none;
@@ -53,7 +46,7 @@ body {
 .rating__star:focus{
 	outline: none;
 }
-.rating__input:checked + .rating__star,
+.rating__star:checked,
 .rating__star:hover{
 	background-image: url(star_gold.png);
 }
@@ -80,16 +73,3 @@ body {
 	z-index: 1;
 	width: 10em;
 }
-.rating__star:focus{
-	outline: none;
-}
-/*.rating__input:focus ~ .rating__focus{
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: -1;
-	outline: solid 0.2em;
-	outline-offset: 0.2em;
-}*/
